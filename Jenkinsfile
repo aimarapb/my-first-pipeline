@@ -8,13 +8,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Install dependencies
-                sh 'npm install'
-            }
-        }
-
         stage('Test') {
             steps {
                 // Run tests
